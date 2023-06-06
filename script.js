@@ -24,7 +24,7 @@ button.addEventListener("click", () => {
             outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, false), "meter");
             break;
         default:
-            console.log("Invalid operation");
+            outputField.innerHTML = "Please Select an Option";
             break;
     }
 });
