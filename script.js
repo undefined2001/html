@@ -24,7 +24,7 @@ button.addEventListener("click", () => {
             outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, false), "meter");
             break;
         case "sftsm":
-            outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, true)), "Sq. Meter";
+            outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, true), "Sq. Meter");
         default:
             outputField.innerHTML = "Please Select an Option";
             break;
