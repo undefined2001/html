@@ -8,10 +8,10 @@ const button = document.getElementById("btn");
 button.addEventListener("click", () => {
     // Get the selected option value
     const selectedOption = operationSelect.value;
-    
+
     // Get the input value
     const inputValue = parseFloat(inputElement.value);
-    
+
     // Perform the corresponding operation based on the selected option
     switch (selectedOption) {
         case "mtf":
@@ -23,6 +23,8 @@ button.addEventListener("click", () => {
         case "ftm":
             outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, false), "meter");
             break;
+        case "sftsm":
+            outputField.innerHTML = outputFormat(meterToFeet(inputValue, true, true));
         default:
             outputField.innerHTML = "Please Select an Option";
             break;
